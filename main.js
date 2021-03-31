@@ -80,6 +80,14 @@ function selectors() {
 			}
 		});
 	});
+
+	$("#selector6").on("change", function () {
+		let value = $(this).val();
+		console.log(value);
+		$(".contentDiv").css({
+			"font-family": value,
+		});
+	});
 }
 
 function convertImg(converter) {

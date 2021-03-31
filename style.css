@@ -26,3 +26,13 @@ body {
 	flex-wrap: wrap;
 	flex-direction: column;
 }
+
+@font-face {
+	font-family: "fangzheng";
+	src: url("/FangZheng.otf") format("otf");
+}
+
+@font-face {
+	font-family: "zhe";
+	src: url("/ChekiangSung.ttf") format("ttf");
+}
