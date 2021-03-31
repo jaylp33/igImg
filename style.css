@@ -1,0 +1,25 @@
+body {
+	max-width: 100vw;
+}
+
+#textConverter {
+	width: 1080px;
+	height: 1920px;
+	zoom: 0.3;
+	background: black;
+	color: white;
+	font-size: 8rem;
+	text-orientation: upright;
+	writing-mode: vertical-rl;
+	box-sizing: border-box;
+	font-family: "Noto Sans TC", sans-serif;
+	display: inline-block;
+	margin: 3rem;
+	white-space: break-spaces;
+}
+
+.btns {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}

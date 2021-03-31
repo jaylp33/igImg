@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
+			rel="stylesheet"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="/style.css" />
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"
+			integrity="sha512-01CJ9/g7e8cUmY0DFTMcUw/ikS799FHiOA0eyHsUWfOetgbx/t6oV4otQ5zXKQyIrQGTHSmRVPIgrgLcZi/WMA=="
+			crossorigin="anonymous"
+		></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="editorArea">
+			<textarea
+				id="textContent"
+				placeholder="Enter content here"
+			></textarea>
+
+			<div class="btns">
+				<label for="selector1">Paddings</label>
+				<input type="text" id="selector1" data-name="padding" />
+				<label for="selector2">fontSize</label>
+				<input type="text" id="selector2" data-name="font-size" />
+				<label for="selector3">LetterSpacing</label>
+				<input type="text" id="selector3" data-name="letter-spacing" />
+				<label for="selector3">Margin-Top</label>
+				<input type="text" id="selector4" data-name="margin-top" />
+				<label for="selector3">Margin-Right</label>
+				<input type="text" id="selector5" data-name="margin-right" />
+			</div>
+		</div>
+
+		<div id="textConverter"></div>
+
+		<button class="btn-convert">Convert</button>
+
+		<script src="/main.js"></script>
+	</body>
+</html>
