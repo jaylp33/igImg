@@ -95,7 +95,8 @@ function convertImg(converter) {
 
 			$(".generateImg").remove();
 
-			document.body.appendChild(img);
+			$(".imgHere").append(img);
+
 			$("#textConverter").css({
 				zoom: 0.3,
 			});

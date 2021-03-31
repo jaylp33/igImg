@@ -14,8 +14,27 @@ body {
 	box-sizing: border-box;
 	font-family: "Noto Sans TC", sans-serif;
 	display: inline-block;
-	margin: 3rem;
 	white-space: break-spaces;
+}
+
+.textConverter2 {
+	width: 1080px;
+	height: 1920px;
+	zoom: 1;
+	background: black;
+	color: white;
+	font-size: 8rem;
+	text-orientation: upright;
+	writing-mode: vertical-rl;
+	box-sizing: border-box;
+	font-family: "Noto Sans TC", sans-serif;
+	display: inline-block;
+	white-space: break-spaces;
+	display: none;
+}
+
+.container {
+	margin: 3rem;
 }
 
 .btns {
