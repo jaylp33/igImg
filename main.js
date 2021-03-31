@@ -41,6 +41,7 @@ function selectors() {
 	let marginTop = $("#selector4");
 	let marginRight = $("#selector5");
 
+	// all input fileds
 	let selectorsArray = [
 		paddingSelector,
 		fontSelector,
@@ -50,6 +51,10 @@ function selectors() {
 	];
 	let selectorsValue = [];
 
+	// SymbolBtns
+	let symbolBtns = $(".symbols");
+
+	// ContentEditor Positiong
 	selectorsArray.forEach((element, index) => {
 		element.on("keyup", function () {
 			let nameData = element.data("name");
@@ -79,6 +84,19 @@ function selectors() {
 				});
 			}
 		});
+	});
+
+	// SymbolAdding
+	symbolBtns.on("click", function () {
+		$this = $(this);
+		let sybolNum = $this.data("symbol");
+		let symbolClass = `symbol${sybolNum}`;
+
+		if ($(".contentDiv").hasClass(symbolClass)) {
+			$(".contentDiv").removeClass(symbolClass);
+		} else {
+			$(".contentDiv").addClass(symbolClass);
+		}
 	});
 
 	$("#selector6").on("change", function () {

@@ -4,7 +4,7 @@ body {
 
 #textConverter {
 	width: 1080px;
-	height: 1920px;
+	height: 1080px;
 	zoom: 0.3;
 	background: black;
 	color: white;
@@ -15,10 +15,67 @@ body {
 	font-family: "Noto Sans TC", sans-serif;
 	display: inline-block;
 	white-space: break-spaces;
+	position: relative;
+}
+
+.contentDiv {
+	position: relative;
+}
+
+.symbol1 {
+}
+
+.symbol1:before {
+	content: "『";
+	position: absolute;
+	text-orientation: upright;
+	writing-mode: vertical-rl;
+	top: -10rem;
+	right: -10px;
+}
+
+.symbol1:after {
+	content: "』";
+	position: absolute;
+	text-orientation: upright;
+	writing-mode: vertical-rl;
+	bottom: 5rem;
+	left: -20px;
+}
+
+.symbol2 {
+}
+
+.symbol2:before {
+	content: "「";
+	position: absolute;
+	text-orientation: upright;
+	writing-mode: vertical-rl;
+	top: -10rem;
+	right: -10px;
+}
+
+.symbol2:after {
+	content: "」";
+	position: absolute;
+	text-orientation: upright;
+	writing-mode: vertical-rl;
+	bottom: 5rem;
+	left: -20px;
 }
 
 .container {
 	margin: 1rem;
+}
+
+.luanQiBaZao {
+	display: inline-block;
+	margin-left: 1rem;
+}
+
+.symbols {
+	min-width: 50px;
+	min-height: 30px;
 }
 
 .btns {
@@ -29,7 +86,7 @@ body {
 
 @font-face {
 	font-family: "fangzheng";
-	src: url("FangZheng.otf");
+	src: url("FangZheng.TTF");
 }
 
 @font-face {
